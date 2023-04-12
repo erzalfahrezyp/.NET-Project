@@ -1,0 +1,44 @@
+﻿@model MeinProfil.Models.EditView
+
+@{
+    ViewData["Title"] = "Edit Profile";
+}
+<div class="text-center">
+    <h1 class="display-4">Edit Profile</h1>
+</div>
+<hr />
+<div class="row">
+    <div class="col-md-4 mx-auto">
+        <form asp-action="Edit" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FieldName" class="control-label">Change data:</label>
+                <select asp-for="FieldName" class="form-select" asp-items="@ViewBag.FieldNames"></select>
+                <span asp-validation-for="FieldName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NewValue" class="control-label">New Data:</label>
+                <input asp-for="NewValue" class="form-control" />
+                <span asp-validation-for="NewValue" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label for="ImagePath" class="form-label"></label>
+                <input class="form-control" type="file" id="ImagePath" name="ImagePath">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-success mt-2" />
+            </div>
+            <br />
+            <div>
+                <a href="@Url.Action("Profile", "User", new { username = User.Identity.Name })" class="btn btn-primary btn-mt-2">Mein Profil</a>
+                <a asp-controller="User" asp-action="Index" class="btn btn-primary btn-mt-2">Home</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

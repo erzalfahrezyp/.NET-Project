@@ -1,0 +1,40 @@
+﻿@model List<AppUser>
+
+@{
+    ViewData["Title"] = "Members";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Member List</h1>
+</div>
+<hr />
+<table class="table table-dark table-striped">
+    <thead>
+        <tr>
+            <th>Fullname</th>
+            <th>Username</th>
+            @*<th>Email</th>
+            <th>Address</th>*@
+            <th>City</th>
+            <th>Profile Picture</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var member in Model)
+        {
+            <tr>
+                <td>@member.Fullname</td>
+                <td>@member.UserName</td>
+                @*<td>@member.Email</td>
+                <td>@member.Address</td>*@
+                <td>@member.City</td>
+                <td><img src="@Url.Content("~/upload/" + member.Path)" width="100" height="100" /></td>
+            </tr>
+        }
+    </tbody>
+</table>
+<br />
+<div style="text-align:center;">
+    <a href="@Url.Action("Profile", "User", new { username = User.Identity.Name })" class="btn btn-primary btn-lg">Mein Profil</a>
+    <a asp-controller="User" asp-action="Index" class="btn btn-primary btn-lg">Home</a>
+</div>

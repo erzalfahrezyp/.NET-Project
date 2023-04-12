@@ -1,0 +1,33 @@
+﻿@model List<dynamic>
+
+@{
+    ViewData["Title"] = "Members";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Member List</h1>
+</div>
+<hr />
+<table class="table table-dark table-striped">
+    <thead>
+        <tr>
+            <th>Fullname</th>
+            <th>Username</th>
+            <th>City</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var member in Model)
+        {
+            <tr>
+                <td>@member.Fullname</td>
+                <td>@member.Username</td>
+                <td>@member.City</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<br />
+<div style="text-align:center;">
+    <a asp-controller="Home" asp-action="Index" class="btn btn-primary btn-lg">Home</a>
+</div>

@@ -34,7 +34,7 @@ public class Produk
     {
         get { return quantity; }
         set { quantity = value; }
-    }            
+    }   
 
     public Produk(string sku, string nama, int stock, int harga)
     {

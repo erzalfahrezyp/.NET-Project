@@ -223,7 +223,7 @@ while (pilihan != 9)
             garis();
             foreach (var p in cart.GetProducts())
             {
-                Console.WriteLine("SKU: {0}\nNama: {1}\nJumlah: {2}\nHarga: {3}", p.SKU, p.Nama, p.Quantity, p.Harga*p.Quantity);
+                Console.WriteLine("SKU: {0}\nNama: {1}\nJumlah: {2}\nHarga Total: {3}", p.SKU, p.Nama, p.Quantity, p.Harga * p.Quantity);
                 garis();
             }
             Console.ReadLine();
@@ -295,6 +295,7 @@ while (pilihan != 9)
     }
 }
 
+
 void garis()
 {
     Console.WriteLine("=============================");
@@ -305,7 +306,7 @@ void ShowProduk(EventProduct e, List<Produk> produk)
     garis();
     e.Trigger("||      Daftar Produk      ||");
     garis();
-    Console.WriteLine("SKU   \tNama  \tStock \tHarga");
+    Console.WriteLine("SKU   \tNama  \tJumlah \tHarga");
     foreach (var item in produk)
     {
         Console.WriteLine($"{item.SKU} \t{item.Nama} \t{item.Stock} \t{item.Harga}");
