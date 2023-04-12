@@ -57,7 +57,7 @@ namespace MeinProfil.Controllers
         public async Task<IActionResult> Members()
         {
             var members = await _userManager.Users
-                .Select(o => new { Fullname = o.Fullname, Username = o.UserName, City = o.City })
+                .Select(o => new { Username = o.UserName, City = o.City })
                 .ToListAsync();
 
             var memberList = members.Cast<object>().ToList();
@@ -81,10 +81,15 @@ namespace MeinProfil.Controllers
             }
             return View(usr);
         }
+        //public IActionResult Logout()
+        //{
+        //    _signInManager.SignOutAsync().GetAwaiter().GetResult();
+        //    return Redirect("/home");
+        //}
         public IActionResult Logout()
         {
             _signInManager.SignOutAsync().GetAwaiter().GetResult();
-            return Redirect("/home");
+            return RedirectToAction("Index", "Home");
         }
         public IActionResult Index()
         {

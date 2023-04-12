@@ -37,4 +37,15 @@
 <div style="text-align:center;">
     <a href="@Url.Action("Profile", "User", new { username = User.Identity.Name })" class="btn btn-primary btn-lg">Mein Profil</a>
     <a asp-controller="User" asp-action="Index" class="btn btn-primary btn-lg">Home</a>
+    <button id="logout-btn" class="btn btn-danger btn-lg">Logout</button>
+
+    <script>
+        document.getElementById('logout-btn').addEventListener('click', function (event) {
+            event.preventDefault();
+            var confirmation = confirm("Anda yakin ingin keluar?");
+            if (confirmation) {
+                window.location.href = "/account/logout";
+            }
+        });
+    </script>
 </div>

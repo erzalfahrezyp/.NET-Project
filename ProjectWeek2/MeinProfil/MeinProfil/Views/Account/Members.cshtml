@@ -11,7 +11,7 @@
 <table class="table table-dark table-striped">
     <thead>
         <tr>
-            <th>Fullname</th>
+            @*<th>Fullname</th>*@
             <th>Username</th>
             <th>City</th>
         </tr>
@@ -20,7 +20,7 @@
         @foreach (var member in Model)
         {
             <tr>
-                <td>@member.Fullname</td>
+                @*<td>@member.Fullname</td>*@
                 <td>@member.Username</td>
                 <td>@member.City</td>
             </tr>
@@ -30,4 +30,6 @@
 <br />
 <div style="text-align:center;">
     <a asp-controller="Home" asp-action="Index" class="btn btn-primary btn-lg">Home</a>
+    <a asp-controller="Account" asp-action="Register" class="btn btn-primary btn-lg">Register</a>
+    <a asp-controller="Account" asp-action="Login" class="btn btn-primary btn-lg">Login</a>
 </div>

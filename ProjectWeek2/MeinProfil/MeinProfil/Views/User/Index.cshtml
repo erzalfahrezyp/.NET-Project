@@ -7,12 +7,26 @@
 <div class="container">
     <div class="row">
         <div class="justify-content-center text-center">
-            <h1 class="display-4">Welcome</h1>
-            <h4>Hello @ViewData["name"]</h4>
+            <br />
+            <br />
+            <h1 class="display-3">Hello @ViewData["name"]</h1>
+            <h5 class="display-5">Have a good day!</h5>
         </div>
     </div>
     <br />
     <div style="text-align:center;">
         <a href="@Url.Action("Profile", "User", new { username = User.Identity.Name })" class="btn btn-primary btn-lg">Mein Profil</a>
+        <button id="logout-btn" class="btn btn-danger btn-lg">Logout</button>
+
+        <script>
+            document.getElementById('logout-btn').addEventListener('click', function (event) {
+                event.preventDefault();
+                var confirmation = confirm("Anda yakin ingin keluar?");
+                if (confirmation) {
+                    window.location.href = "/account/logout";
+                }
+            });
+        </script>
+
     </div>
 </div>

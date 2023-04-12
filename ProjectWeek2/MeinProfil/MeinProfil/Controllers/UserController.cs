@@ -61,7 +61,6 @@ namespace MeinProfil.Controllers
             List<string> fieldNames = new List<string>()
             {
                 "Fullname",
-                "Username",
                 "Email",
                 "Address",
                 "City"

@@ -17,6 +17,22 @@ html {
   min-height: 100%;
 }
 
-body {
-  margin-bottom: 60px;
+
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #c7c3b5;
+        color: #1a1818;
+    }
+
+    a {
+        color: #101112;
+        border-color: Black;
+    }
+
+    .btn {
+        background-color: #8c8980;
+        color: white;
+        border-color: black;
+    }
 }
