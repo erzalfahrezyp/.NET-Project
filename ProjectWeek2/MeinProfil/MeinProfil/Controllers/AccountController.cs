@@ -81,11 +81,6 @@ namespace MeinProfil.Controllers
             }
             return View(usr);
         }
-        //public IActionResult Logout()
-        //{
-        //    _signInManager.SignOutAsync().GetAwaiter().GetResult();
-        //    return Redirect("/home");
-        //}
         public IActionResult Logout()
         {
             _signInManager.SignOutAsync().GetAwaiter().GetResult();
