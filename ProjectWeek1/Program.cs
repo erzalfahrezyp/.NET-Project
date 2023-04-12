@@ -269,14 +269,14 @@ while (pilihan != 9)
             else if (input == "2")
             {
                 garis();
-                e.Trigger("Transaksi dibatalkan. Silakan lanjutkan belanja.");
+                e.Trigger("Transaksi dibatalkan. \nSilakan lanjutkan belanja.");
                 Console.ReadLine();
                 isValidInput = true;
             }
             else
             {
                 garis();
-                e.Trigger("Pilihan tidak valid. Silakan masukkan pilihan yang benar.");
+                e.Trigger("Pilihan tidak valid. \nSilakan masukkan pilihan yang benar.");
                 Console.ReadLine();
             }
             }
