@@ -28,7 +28,7 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(o =>
 // set session expired
 builder.Services.ConfigureApplicationCookie(o =>
 {
-    o.ExpireTimeSpan = TimeSpan.FromMinutes(1); // session 1 menit
+    o.ExpireTimeSpan = TimeSpan.FromMinutes(5); // session 5 menit
     o.SlidingExpiration = true;
 });
 
