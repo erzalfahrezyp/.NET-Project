@@ -6,8 +6,34 @@
     <br />
     <br />
     <h1 class="display-4">Welcome to Mein Profil Web App</h1>
+    <h5>ASP.NET Core Web App MVC Project - .NET Bootcamp</h5>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
     <br />
-    <a asp-controller="Account" asp-action="Register" class="btn btn-primary btn-lg">Register</a>
-    <a asp-controller="Account" asp-action="Login" class="btn btn-primary btn-lg">Login</a>
+    @if (User.Identity.IsAuthenticated)
+    {
+        <div style="text-align:center;">
+            <a href="@Url.Action("Profile", "User", new { username = User.Identity.Name })" class="btn btn-primary btn-lg">Mein Profil</a>
+            <button id="logout-btn" class="btn btn-danger btn-lg">Logout</button>
+
+            <script>
+                document.getElementById('logout-btn').addEventListener('click', function (event) {
+                    event.preventDefault();
+                    var confirmation = confirm("Anda yakin ingin keluar?");
+                    if (confirmation) {
+                        window.location.href = "/account/logout";
+                    }
+                });
+            </script>
+
+        </div>
+    }
+    else
+    {
+        <div style="text-align:center;">
+            <a asp-controller="Account" asp-action="Register" class="btn btn-primary btn-lg">Register</a>
+            <a asp-controller="Account" asp-action="Login" class="btn btn-primary btn-lg">Login</a>
+        </div>
+    }
+    @*<a asp-controller="Account" asp-action="Register" class="btn btn-primary btn-lg">Register</a>
+    <a asp-controller="Account" asp-action="Login" class="btn btn-primary btn-lg">Login</a>*@
 </div>
