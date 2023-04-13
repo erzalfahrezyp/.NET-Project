@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 
 namespace MeinProfil.Controllers
 {
@@ -44,7 +45,6 @@ namespace MeinProfil.Controllers
             {
                 return View(data);
             }
-
             return View("PublicProfile", data);
         }
         [Authorize]
@@ -73,7 +73,7 @@ namespace MeinProfil.Controllers
         public async Task<IActionResult> EditAsync(EditView editView)
         {
             System.Security.Claims.ClaimsPrincipal currentUser = this.User;
-            var idLogin = _userManager.GetUserId(currentUser); 
+            var idLogin = _userManager.GetUserId(currentUser);
             string uniqueFileName = UploadImage(editView.ImagePath);
 
             var data = await _userManager.FindByIdAsync(idLogin);
@@ -83,6 +83,26 @@ namespace MeinProfil.Controllers
             var result = await _userManager.UpdateAsync(data);
             return RedirectToAction("Profile", "User", new { username = User.Identity.Name });
         }
+        //[Authorize]
+        //public IActionResult EditPict()
+        //{
+        //    return View();
+        //}
+        //[Authorize]
+        //[HttpPost]
+        //public async Task<IActionResult> EditPictAsync(EditPictView editPictView)
+        //{
+        //    System.Security.Claims.ClaimsPrincipal currentUser = this.User;
+        //    var idLogin = _userManager.GetUserId(currentUser);
+        //    string uniqueFileName = UploadImage(editPictView.ImagePath);
+
+        //    var data = await _userManager.FindByIdAsync(idLogin);
+        //    //typeof(AppUser).GetProperty(editPictView.FieldName).SetValue(data, editPictView.NewValue);
+        //    data.Path = uniqueFileName;
+
+        //    var result = await _userManager.UpdateAsync(data);
+        //    return RedirectToAction("Profile", "User", new { username = User.Identity.Name });
+        //}
 
 
         private string UploadImage(IFormFile file)
@@ -92,6 +112,7 @@ namespace MeinProfil.Controllers
             {
                 string uploadFolder = _hosting.WebRootPath + "/upload/";
                 uniqueFileName = Guid.NewGuid().ToString() + "_" + file.FileName;
+
                 string filePath = Path.Combine(uploadFolder, uniqueFileName);
                 using (var fileStream = new FileStream(filePath, FileMode.Create))
                 {
@@ -99,12 +120,6 @@ namespace MeinProfil.Controllers
                 }
             }
             return uniqueFileName;
-        }
-
-        [Authorize]
-        public IActionResult Success()
-        {
-            return View();
         }
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gOuU+BUfQgx9fdvtzIGOutoX3LxU8C04Dmllw4rvbjk=",
+  "Hash": "RfHIUVgAVtz7VSnpHM6Is4+ezpjeZzBo7nFzzZYT3eY=",
   "Source": "MeinProfil",
   "BasePath": "_content/MeinProfil",
   "Mode": "Default",
@@ -1139,6 +1139,23 @@
       "OriginalItemSpec": "wwwroot\\upload\\30adf569-3c41-40b0-9217-d27aa42d5db1_babi.jpeg"
     },
     {
+      "Identity": "C:\\Users\\fahre\\hello\\weekProject\\ProjectWeek2\\MeinProfil\\MeinProfil\\wwwroot\\upload\\35229c3f-2021-45f8-a271-f776d33ea9b1_001968500_1455438595-chi-success-kid-meme-dad-kidney.jpg",
+      "SourceId": "MeinProfil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\fahre\\hello\\weekProject\\ProjectWeek2\\MeinProfil\\MeinProfil\\wwwroot\\",
+      "BasePath": "_content/MeinProfil",
+      "RelativePath": "upload/35229c3f-2021-45f8-a271-f776d33ea9b1_001968500_1455438595-chi-success-kid-meme-dad-kidney.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\upload\\35229c3f-2021-45f8-a271-f776d33ea9b1_001968500_1455438595-chi-success-kid-meme-dad-kidney.jpg"
+    },
+    {
       "Identity": "C:\\Users\\fahre\\hello\\weekProject\\ProjectWeek2\\MeinProfil\\MeinProfil\\wwwroot\\upload\\35e601df-7990-45bb-a85d-b441c6591967_babi.jpeg",
       "SourceId": "MeinProfil",
       "SourceType": "Discovered",
@@ -1154,6 +1171,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\upload\\35e601df-7990-45bb-a85d-b441c6591967_babi.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\fahre\\hello\\weekProject\\ProjectWeek2\\MeinProfil\\MeinProfil\\wwwroot\\upload\\36bf3f21-8d08-417c-a5b6-da7ebcaffb92_001968500_1455438595-chi-success-kid-meme-dad-kidney.jpg",
+      "SourceId": "MeinProfil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\fahre\\hello\\weekProject\\ProjectWeek2\\MeinProfil\\MeinProfil\\wwwroot\\",
+      "BasePath": "_content/MeinProfil",
+      "RelativePath": "upload/36bf3f21-8d08-417c-a5b6-da7ebcaffb92_001968500_1455438595-chi-success-kid-meme-dad-kidney.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\upload\\36bf3f21-8d08-417c-a5b6-da7ebcaffb92_001968500_1455438595-chi-success-kid-meme-dad-kidney.jpg"
     },
     {
       "Identity": "C:\\Users\\fahre\\hello\\weekProject\\ProjectWeek2\\MeinProfil\\MeinProfil\\wwwroot\\upload\\3ff9c806-71d3-438d-a211-16b90b4a7bc8_ayamjago.jpg",
@@ -1409,6 +1443,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\upload\\ae2b967c-f35f-4473-a917-9d3833502664_ayamjago.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\fahre\\hello\\weekProject\\ProjectWeek2\\MeinProfil\\MeinProfil\\wwwroot\\upload\\b09e78c1-c932-477b-8184-5b25800aff3a_images.jpeg",
+      "SourceId": "MeinProfil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\fahre\\hello\\weekProject\\ProjectWeek2\\MeinProfil\\MeinProfil\\wwwroot\\",
+      "BasePath": "_content/MeinProfil",
+      "RelativePath": "upload/b09e78c1-c932-477b-8184-5b25800aff3a_images.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\upload\\b09e78c1-c932-477b-8184-5b25800aff3a_images.jpeg"
     },
     {
       "Identity": "C:\\Users\\fahre\\hello\\weekProject\\ProjectWeek2\\MeinProfil\\MeinProfil\\wwwroot\\upload\\b2a75fb5-a817-44d4-bdf0-14f15ff7fe8a_babi.jpeg",
