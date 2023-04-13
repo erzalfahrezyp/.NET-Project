@@ -4,52 +4,55 @@
     ViewData["Title"] = "Profile";
 }
 
-<h1 class="display-4">Mein Profil</h1>
+<h1 class="display-4 text-center">Mein Profil</h1>
 
-<div>
-    <h4 class="display-7">Details</h4>
-    <hr />
-    <table class="table">
-        <tr>
-            <td>@Html.DisplayNameFor(model => model.Fullname)</td>
-            <td>@Html.DisplayFor(model => model.Fullname)</td>
-        </tr>
-        <tr>
-            <td>@Html.DisplayNameFor(model => model.UserName)</td>
-            <td>@Html.DisplayFor(model => model.UserName)</td>
-        </tr>
-        <tr>
-            <td>@Html.DisplayNameFor(model => model.Address)</td>
-            <td>@Html.DisplayFor(model => model.Address)</td>
-        </tr>
-        <tr>
-            <td>@Html.DisplayNameFor(model => model.City)</td>
-            <td>@Html.DisplayFor(model => model.City)</td>
-        </tr>
-        <tr>
-            <td>@Html.DisplayNameFor(model => model.Email)</td>
-            <td>@Html.DisplayFor(model => model.Email)</td>
-        </tr>
-        <tr>
-            <td>@Html.DisplayName("Image")</td>
-            <td><img src="/upload/@Url.Content(Model.Path)" width="100" height="100"/></td>
-        </tr>
-    </table>
+@*<div>*@
+<div class="row">
+    <div class="col-md-4 mx-auto">
+        <h4 class="display-7 text-center">Details</h4>
+        <hr />
+        <table class="table">
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.Fullname)</td>
+                <td>@Html.DisplayFor(model => model.Fullname)</td>
+            </tr>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.UserName)</td>
+                <td>@Html.DisplayFor(model => model.UserName)</td>
+            </tr>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.Address)</td>
+                <td>@Html.DisplayFor(model => model.Address)</td>
+            </tr>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.City)</td>
+                <td>@Html.DisplayFor(model => model.City)</td>
+            </tr>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.Email)</td>
+                <td>@Html.DisplayFor(model => model.Email)</td>
+            </tr>
+            <tr>
+                <td>@Html.DisplayName("Image")</td>
+                <td><img src="/upload/@Url.Content(Model.Path)" width="100" height="100"/></td>
+            </tr>
+        </table>
+        <br />
+        <div style="text-align:center;">
+            <button type="button" onclick="location.href='@Url.Action("Edit", new { id = Model.Id })'" class="btn btn-primary btn-mt-2">Edit</button>
+            <a asp-controller="User" asp-action="Index" class="btn btn-primary btn-mt-2">Home</a>
+            <button id="logout-btn" class="btn btn-danger btn-mt-2">Logout</button>
+
+            <script>
+                document.getElementById('logout-btn').addEventListener('click', function (event) {
+                    event.preventDefault();
+                    var confirmation = confirm("Anda yakin ingin keluar?");
+                    if (confirmation) {
+                        window.location.href = "/account/logout";
+                    }
+                });
+            </script>
+        </div>
+    </div>
 </div>
 
-<br />
-<div>
-    <button type="button" onclick="location.href='@Url.Action("Edit", new { id = Model.Id })'" class="btn btn-primary btn-mt-2">Edit</button>
-    <a asp-controller="User" asp-action="Index" class="btn btn-primary btn-mt-2">Home</a>
-    <button id="logout-btn" class="btn btn-danger btn-mt-2">Logout</button>
-
-    <script>
-        document.getElementById('logout-btn').addEventListener('click', function (event) {
-            event.preventDefault();
-            var confirmation = confirm("Anda yakin ingin keluar?");
-            if (confirmation) {
-                window.location.href = "/account/logout";
-            }
-        });
-    </script>
-</div>

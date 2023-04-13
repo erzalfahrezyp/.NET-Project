@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pst6bn98V6ODqkM/1lo6YVkJESkpPkNIIeUF9Q3Jfvk=",
+  "Hash": "gOuU+BUfQgx9fdvtzIGOutoX3LxU8C04Dmllw4rvbjk=",
   "Source": "MeinProfil",
   "BasePath": "_content/MeinProfil",
   "Mode": "Default",
@@ -1275,6 +1275,23 @@
       "OriginalItemSpec": "wwwroot\\upload\\615015d7-f3ad-4730-b107-19abc6b7066d_Meja.jpg"
     },
     {
+      "Identity": "C:\\Users\\fahre\\hello\\weekProject\\ProjectWeek2\\MeinProfil\\MeinProfil\\wwwroot\\upload\\688d63c3-980a-49db-91f9-474da5dc6486_strange.jpeg",
+      "SourceId": "MeinProfil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\fahre\\hello\\weekProject\\ProjectWeek2\\MeinProfil\\MeinProfil\\wwwroot\\",
+      "BasePath": "_content/MeinProfil",
+      "RelativePath": "upload/688d63c3-980a-49db-91f9-474da5dc6486_strange.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\upload\\688d63c3-980a-49db-91f9-474da5dc6486_strange.jpeg"
+    },
+    {
       "Identity": "C:\\Users\\fahre\\hello\\weekProject\\ProjectWeek2\\MeinProfil\\MeinProfil\\wwwroot\\upload\\7128e919-ba9d-4f3d-a47b-381ed1fd8548_ayamjago.jpg",
       "SourceId": "MeinProfil",
       "SourceType": "Discovered",
@@ -1494,6 +1511,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\upload\\db0bca04-705e-4db8-be7a-8735a5207c4c_Kursi.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\fahre\\hello\\weekProject\\ProjectWeek2\\MeinProfil\\MeinProfil\\wwwroot\\upload\\dba28921-31b3-4851-8559-42e8b46e6ed1_download.jpeg",
+      "SourceId": "MeinProfil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\fahre\\hello\\weekProject\\ProjectWeek2\\MeinProfil\\MeinProfil\\wwwroot\\",
+      "BasePath": "_content/MeinProfil",
+      "RelativePath": "upload/dba28921-31b3-4851-8559-42e8b46e6ed1_download.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\upload\\dba28921-31b3-4851-8559-42e8b46e6ed1_download.jpeg"
     },
     {
       "Identity": "C:\\Users\\fahre\\hello\\weekProject\\ProjectWeek2\\MeinProfil\\MeinProfil\\wwwroot\\upload\\e01cc1a2-d88b-457c-b3a1-9821cc1b0c07_001968500_1455438595-chi-success-kid-meme-dad-kidney.jpg",
