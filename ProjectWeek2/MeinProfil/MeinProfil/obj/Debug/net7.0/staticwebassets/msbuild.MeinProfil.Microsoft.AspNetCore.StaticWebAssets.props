@@ -1312,6 +1312,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\upload\9616afd1-9e0d-44e9-9f40-2eed36b67f2f_babi.jpeg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\upload\99be8cd7-754c-4faa-8d6b-ddeedf6f1a3c_images.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>MeinProfil</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MeinProfil</BasePath>
+      <RelativePath>upload/99be8cd7-754c-4faa-8d6b-ddeedf6f1a3c_images.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\upload\99be8cd7-754c-4faa-8d6b-ddeedf6f1a3c_images.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\upload\ae2b967c-f35f-4473-a917-9d3833502664_ayamjago.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>MeinProfil</SourceId>
@@ -1503,6 +1519,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\upload\e8b7eb07-4e95-488d-b335-a454ba51bf54_images.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\upload\ea69113f-20cc-4740-8f78-1abf18012b0e_001968500_1455438595-chi-success-kid-meme-dad-kidney.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>MeinProfil</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MeinProfil</BasePath>
+      <RelativePath>upload/ea69113f-20cc-4740-8f78-1abf18012b0e_001968500_1455438595-chi-success-kid-meme-dad-kidney.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\upload\ea69113f-20cc-4740-8f78-1abf18012b0e_001968500_1455438595-chi-success-kid-meme-dad-kidney.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\upload\ed112fd1-29e1-44b1-b2d9-e3caa938238e_ayamjago.jpg))">
       <SourceType>Package</SourceType>
